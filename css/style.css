@@ -20,6 +20,7 @@
     line-height: 40px;
     height: 40px;
 }
+
 .navbar-brand {
     margin-bottom: 25px;
 }
@@ -69,6 +70,7 @@
 
 .header-h2 {
     color: white;
+
 }
 
 .header>.container {
@@ -104,6 +106,7 @@
     width: 65%;
     font-size: 16px;
 }
+
 
 .btn-coustom {
     margin-left: 5px;
@@ -177,7 +180,7 @@ form>h4>span {
     margin-top: 138px;
     padding-top: 10px;
     padding-left: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
 }
 
 .header-footer-background {
@@ -239,6 +242,7 @@ form>h4>span {
     }
 }
 
+}
 col-xs-1>div {
     width: 100%;
     height: 20px;
@@ -246,44 +250,12 @@ col-xs-1>div {
 }
 
 .tabs-block {
-    margin-top: 0;
-}
+    margin-top: 20px;
+}   
 
-.tab1,
-.tab2,
-.tab3 {
-    transition: top 1s ease-out 0.5s;
-    background-color: black;
-    height: 112px;
-    width: 115px;
-    display: table
-}
-
-.tab1>span,
-.tab2>span,
-.tab3>span {
-    color: white;
-    display: block;
-    margin: auto;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-
-@media screen and (max-width:991px) {
-    .tab1,
-    .tab2,
-    .tab3 {
-        float: left;
-        height: ;
-        width: 30%;
-    }
-}
 
 .tabs-block .hidden {
-    display: none;
-    visibility: hidden;
-    transition-duration: 0.5;
+
 }
 
 .tabs-block .col-xs-5 h4 {
@@ -291,7 +263,7 @@ col-xs-1>div {
 }
 
 .active-tab {
-    background: darkorange;
+    background-color: darkorange !important;
 }
 
 .tabs-block p {
@@ -695,3 +667,45 @@ p {
 .h4-center {
     text-align: center;
 }
+
+.fa:hover {
+    text-decoration: none;
+}
+.fa:focus {
+    text-decoration: none;
+}
+
+.header-btn>a:hover{
+    text-decoration: none;
+}
+.header-btn>a:focus{
+    text-decoration: none;
+}
+
+.custom-btn {
+    border: none;
+    height: 100px;
+    width: 100px;
+    float: left;
+    background-color: black;
+    color: white;
+    padding: 40px 35px;
+}
+
+
+
+
+li.active {
+    background-color: darkorange;
+}
+
+.carousel-inner {
+    max-width: 754px !important;
+}
+@media screen and (max-width:420px) {
+    .custom-btn {
+    width: 70px;
+    height: 70px;
+    padding: 26px 18px;
+    }
+
