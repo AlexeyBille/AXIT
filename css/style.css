@@ -114,6 +114,13 @@
     border: solid 2px white;
     border-radius: 0px;
     padding: 9px 30px;
+    transition-duration: 0.5s;
+}
+.btn-coustom:hover {
+    text-decoration: none;
+    border-color: darkorange;
+    background-color: darkorange;
+    
 }
 
 .btn-coustom>a {
@@ -282,6 +289,14 @@ col-xs-1>div {
     padding-top: 10px;
     margin-left: 25px;
     margin-top: 20px;
+    border-collapse: separate;
+    transition-duration: 0.5s;
+}
+.tabs-block-btn:hover {
+    text-decoration: none;
+    background-color: white;
+    color: darkorange;
+    border: 1px solid darkorange;
 }
 
 .tabs-block-bakcground {
@@ -468,18 +483,25 @@ col-xs-1>div {
 .pricing-options .col-md-4:nth-of-type(2n-1) {
     padding-top: 120px;
     padding-left: 22px;
+    transition-duration: 0.5s;
+
+}
+.pricing-options .col-md-4:hover {
+    padding-top: 10px !important;
+    padding-left: 0;
+    padding-right: 0;
+    cursor:pointer;
 }
 
 .pricing-options .col-md-4:nth-of-type(2n) {
     padding-top: 85px;
     padding-left: 26px;
     padding-right: 10px;
+    transition-duration: 0.5s;
+
 }
 
-.pricing-options .col-md-4:last-of-type {
-    padding-left: 30px;
-    padding-right: 10px;
-}
+
 
 .what-our-customers-are-saying {
     padding-top: 80px;
@@ -529,6 +551,7 @@ col-xs-1>div {
     min-height: 320px;
     background: black;
     padding-top: 60px;
+    z-index: -10 !important;
 }
 
 .parallax-window>h2,
@@ -586,6 +609,13 @@ form.contact-us-form {
     left: -65px;
     bottom: 5px;
     margin-left: 50%;
+    transition-duration: 0.5s;
+}
+.send-message:hover {
+ color: darkorange;
+    background-color: white;
+    border-collapse: separate;
+    border:1px solid darkorange;
 }
 
 body>footer {
@@ -602,11 +632,15 @@ footer>img {
     background-color: black;
 }
 
-footer>.footer>a {
+footer>.footer>.social>a {
     display: inline;
     color: #f5f5f5;
     font-size: 25px;
     letter-spacing: 20px;
+    transition-duration: 0.5s;
+}
+footer>.footer>.social>a:hover {
+    color: darkorange;
 }
 
 footer>.footer {
@@ -629,12 +663,18 @@ footer>.footer {
 .social-header {
     text-align: center;
     margin-top: 25px;
+    
+}
+.social-header>a:hover {
+    color: white;
 }
 
 .social-header>a {
     color: rgba(0, 0, 0, 0.5);
     font-size: 60px;
     letter-spacing: 25px;
+    transition-duration: 0.5s;
+    line-height: 65px;
 }
 h2 {
     font-size:36px;;
@@ -690,6 +730,12 @@ p {
     background-color: black;
     color: white;
     padding: 40px 35px;
+    transition-duration: 0.5s;
+}
+.custom-btn:hover {
+    background-color: darkorange;
+    cursor: pointer;
+    
 }
 
 
@@ -709,3 +755,11 @@ li.active {
     padding: 26px 18px;
     }
 
+
+
+
+
+
+.pricing-options .col-md-4>product {
+    box-sizing: content-box !important;
+}
