@@ -1,0 +1,209 @@
+@import "meta";
+
+
+
+
+.ax {
+	font-weight: 700;
+	color: $white;
+	font-family: $font_0;
+}
+.it {
+	font-weight: 300;
+	color: $color_pizazz_approx;
+	font-family: $font_0;
+}
+#navbar {
+	background-image: none;
+	background-color: $black;
+	margin: 0;
+	.navbar-header > .navbar-brand {
+		padding-left: 45px;
+		font-size: 35px;
+		display: table-cell;
+		vertical-align: middle;
+		> span {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	.navbar-collapse > .navbar-right {
+		margin-right: 0;
+		> li {
+			margin-left: 20px;
+			> a {
+				display: table-cell;
+				vertical-align: middle;
+				font-weight: 500;
+			}
+		}
+	}
+}
+.navbar-brand {
+	line-height: 40px;
+	height: 40px;
+	margin-top: 8px;
+}
+.header {
+	background: URL('../img/image.png') repeat-y;
+	background-color: $black;
+	background-size: 1400px;
+	background-position-y: -116px;
+	> .container {
+		padding-left: 24px;
+		> .col-xs-12 {
+			&.col-md-8 {
+				padding-top: 72px;
+				> h1 {
+					font-size: 80px;
+				}
+				> h2 {
+					font-family: $font_1;
+					margin-top: 18px;
+					font-size: 37px;
+					line-height: 41px;
+					font-weight: 400;
+				}
+				> hr {
+					margin-left: 5px;
+					border: solid 1px $white;
+					width: 62px;
+					float: left;
+				}
+				p {
+					color: $color_schooner_approx;
+					float: left;
+					width: 65%;
+					font-size: 16px;
+				}
+			}
+			&.col-md-4 {
+				margin: auto;
+				> div {
+					padding: 15px;
+					background-color: $color_wild_sand_approx;
+					> p {
+						font-style: italic;
+					}
+				}
+				> p {
+					background-color: $color_wild_sand_approx;
+				}
+			}
+		}
+	}
+}
+.header-h2 {
+	color: $white;
+}
+.btn-coustom {
+	margin-left: 5px;
+	margin-top: 8px;
+	border: solid 2px $white !important;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+	padding: 9px 30px;
+	//Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+	transition-duration: 0.5s;
+	&:hover {
+		text-decoration: none;
+		border-color: $color_pizazz_approx;
+		background-color: $color_pizazz_approx;
+	}
+	> a {
+		font-weight: 700;
+		font-size: 15px;
+		color: $white;
+	}
+}
+.header-form {
+	background: $white;
+	padding-top: 10px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+	margin-left: -10px;
+	margin-top: 40%;
+}
+form {
+	> h4 {
+		text-align: center;
+		font-weight: 900;
+		letter-spacing: 1px;
+		padding-bottom: 25px;
+		> span {
+			color: $color_pizazz_approx;
+		}
+	}
+	&.contact-us-form {
+		margin-top: 80px;
+		padding: 10px;
+	}
+}
+.try-free-from {
+	width: 70%;
+	margin: 15px 50px;
+	padding-bottom: 21px;
+	border: none;
+}
+.get-started {
+	width: 100%;
+	margin-top: 20px;
+	border: none;
+	color: $white;
+	background-color: $color_tan_hide_approx;
+	height: 53px;
+	//Instead of the line below you could use @include border-bottom-left-radius($radius)
+	border-bottom-left-radius: 5px;
+	//Instead of the line below you could use @include border-bottom-right-radius($radius)
+	border-bottom-right-radius: 5px;
+}
+.header-footer {
+	margin-top: 138px;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-bottom: 75px;
+	h4 {
+		font-family: $font_0;
+		font-weight: 700;
+		color: $black_70;
+	}
+	p {
+		color: $black_50;
+	}
+	.col-lg-2 {
+		margin-top: 20px;
+		margin-left: -22px;
+		margin-right: 22px;
+		i {
+			font-size: 46px;
+			color: $black_10;
+		}
+		a:first-child {
+			margin-right: 25px;
+		}
+		&:nth-child(2n-1) a:first-child {
+			margin-right: 50px;
+		}
+	}
+	.col-lg-1 {
+		i {
+			margin-top: 20px;
+			font-size: 46px;
+			color: $black_10;
+		}
+		a.rss {
+			margin: 0;
+		}
+	}
+}
+.header-footer-background {
+	background-color: $white_45;
+}
+@media screen and(min-width:1401px) {
+	.header {
+		background: URL('../img/image.png') repeat-y;
+		background-color: $black;
+		background-size: 1920px;
+		background-position-y: -116px;
+	}
+}

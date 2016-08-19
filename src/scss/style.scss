@@ -1,0 +1,469 @@
+@import "meta";
+
+
+
+%extend_1 {
+	width: 100%;
+	border: none;
+	margin-bottom: 20px;
+	height: 40px;
+}
+.tabs-block {
+	margin-top: 20px;
+	p {
+		text-indent: 1.5em;
+	}
+	.col-xs-5 h4 {
+		font-weight: 700;
+	}
+}
+.active-tab {
+	background-color: $color_pizazz_approx !important;
+}
+.tabs-block-btn {
+	display: block;
+	color: $white;
+	background-color: $color_pizazz_approx;
+	width: 120px;
+	height: 45px;
+	border: solid 0;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	text-align: center;
+	padding-top: 10px;
+	margin-left: 25px;
+	margin-top: 20px;
+	border-collapse: separate;
+	//Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+	transition-duration: 0.5s;
+	&:hover {
+		text-decoration: none;
+		background-color: $white;
+		color: $color_pizazz_approx;
+		border: 1px solid $color_pizazz_approx;
+	}
+}
+.tabs-block-bakcground {
+	margin-top: 0;
+	background-color: $color_wild_sand_approx;
+	padding-top: 70px;
+	padding-bottom: 120px;
+}
+.sub-list-section {
+	padding-bottom: 110px;
+	> {
+		.col-md-6:first-child {
+			padding-top: 110px;
+		}
+		.col-md-5:last-child {
+			padding-top: 95px;
+			padding-right: 0;
+		}
+	}
+	span {
+		display: block;
+		border: solid 2px $web_orange;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+		padding: 10px;
+	}
+}
+.fa-cloud-upload {
+	font-size: 15px !important;
+	color: $color_pizazz_approx;
+}
+.margin-10 {
+	margin: -10px 0 0 -20px;
+}
+.fa-cloud-download {
+	font-size: 15px !important;
+	color: $color_pizazz_approx;
+}
+.margin-11 {
+	margin: -20px 0 0 -5px;
+}
+.standard-picture-section-background {
+	background: $color_wild_sand_approx;
+}
+.standard-picture-section {
+	padding-top: 96px;
+	padding-bottom: 53px;
+	.col-md-6:first-child {
+		padding-left: 30px;
+		padding-right: 60px;
+	}
+}
+.why-this-is-awesome {
+	padding-top: 80px;
+	padding-bottom: 48px;
+	h2 {
+		text-align: center;
+	}
+	hr {
+		text-align: center;
+	}
+	p {
+		text-align: center;
+		margin-left: 7px;
+	}
+	.col-xs-12 {
+		.fa {
+			color: $color_pizazz_approx;
+			font-size: 32px;
+		}
+		&:nth-of-type(2) .border-radius-fa {
+			padding-left: 15px;
+		}
+		&:nth-of-type(3) .border-radius-fa {
+			padding-left: 26px;
+		}
+	}
+	h3 {
+		text-align: center;
+		margin-left: 15px;
+	}
+}
+.border-radius-fa {
+	height: 70px;
+	width: 70px;
+	border: 2px solid $color_pizazz_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 100%;
+	padding: 17px 24px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 85px;
+}
+.pricing-options-background {
+	background-color: $color_wild_sand_approx;
+}
+.pricing-options {
+	padding-top: 80px;
+	padding-bottom: 95px;
+	h2 {
+		text-align: center;
+	}
+	hr {
+		text-align: center;
+	}
+	p {
+		text-align: center;
+	}
+	.col-md-4 {
+		&:nth-of-type(2n-1) {
+			padding-top: 120px;
+			padding-left: 22px;
+			//Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+			transition-duration: 0.5s;
+		}
+		&:hover {
+			padding-top: 10px !important;
+			padding-left: 0;
+			padding-right: 0;
+			cursor: pointer;
+		}
+		&:nth-of-type(2n) {
+			padding-top: 85px;
+			padding-left: 26px;
+			padding-right: 10px;
+			//Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+			transition-duration: 0.5s;
+		}
+	}
+}
+.what-our-customers-are-saying {
+	padding-top: 80px;
+	padding-bottom: 155px;
+	h2 {
+		text-align: center;
+	}
+	hr {
+		text-align: center;
+	}
+	p {
+		text-align: center;
+	}
+	> .col-md-4 {
+		padding-top: 80px;
+		padding-left: 60px;
+		padding-right: 60px;
+		p {
+			text-align: left;
+		}
+		.col-xs-4 {
+			padding-left: 0;
+		}
+		> div:first-of-type {
+			background-color: $color_wild_sand_approx;
+			padding: 5px;
+			margin-bottom: 25px;
+			> p {
+				font-style: italic;
+			}
+		}
+	}
+}
+.paralax-background {
+	position: fixed;
+	background-image: $url_0;
+	left: 50%;
+	top: 0;
+	width: 100%;
+	margin-left: 50%;
+}
+.parallax-window {
+	min-height: 320px;
+	background: $black;
+	padding-top: 60px;
+	z-index: -10 !important;
+	> h2 {
+		text-align: center;
+		color: $white;
+	}
+	> p {
+		text-align: center;
+	}
+	> div {
+		position: absolute;
+		margin-left: 50%;
+		margin-top: 30px;
+		left: -60px;
+	}
+	> hr {
+		color: $white;
+	}
+}
+.contact-us {
+	padding-top: 80px;
+	padding-bottom: 67px;
+	> h2 {
+		text-align: center;
+	}
+	> hr {
+		text-align: center;
+	}
+	> p {
+		text-align: center;
+	}
+}
+#contact-us-name {
+	@extend %extend_1;
+}
+#contact-us-email {
+	@extend %extend_1;
+}
+#contact-us-object {
+	@extend %extend_1;
+}
+#contact-us-textarea {
+	width: 100%;
+	height: 170px;
+	border: none;
+}
+.send-message {
+	margin-top: 15px;
+	height: 45px;
+	width: 145px;
+	border: 0;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+	background-color: $color_pizazz_approx;
+	color: $white;
+	position: relative;
+	left: -65px;
+	bottom: 5px;
+	margin-left: 50%;
+	//Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+	transition-duration: 0.5s;
+	&:hover {
+		color: $color_pizazz_approx;
+		background-color: $white;
+		border-collapse: separate;
+		border: 1px solid $color_pizazz_approx;
+	}
+}
+footer {
+	> img {
+		width: 690px;
+		height: 50px;
+	}
+	> .footer {
+		padding-top: 22px;
+		text-align: center;
+		> .social > a {
+			display: inline;
+			color: $color_wild_sand_approx;
+			font-size: 25px;
+			letter-spacing: 20px;
+			//Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+			transition-duration: 0.5s;
+			&:hover {
+				color: $color_pizazz_approx;
+			}
+		}
+	}
+}
+.footer-background {
+	background-color: $black;
+}
+.img-sub-list-section {
+	margin: 0 auto;
+}
+.img-standard-picture-section {
+	margin: 0 auto;
+}
+.img-tabs {
+	margin: 0 auto;
+}
+.social-header {
+	text-align: center;
+	margin-top: 25px;
+	> a {
+		color: $black_50;
+		font-size: 60px;
+		letter-spacing: 25px;
+		//Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+		transition-duration: 0.5s;
+		line-height: 65px;
+		&:hover {
+			color: $white;
+		}
+	}
+}
+h2 {
+	font-size: 36px;
+    font-weight: 300;
+}
+hr {
+	width: 65px;
+	color: $color_pizazz_approx;
+	border: 1px solid;
+}
+p {
+	color: $color_shady_lady_approx;
+}
+.h4-center {
+	text-align: center;
+}
+.fa {
+	&:hover {
+		text-decoration: none;
+	}
+	&:focus {
+		text-decoration: none;
+	}
+}
+.custom-btn {
+	border: none;
+	height: 100px;
+	width: 100px;
+	float: left;
+	background-color: $black;
+	color: $white;
+	padding: 40px 35px;
+	//Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+	transition-duration: 0.5s;
+	&:hover {
+		background-color: $color_pizazz_approx;
+		cursor: pointer;
+	}
+}
+.carousel-inner {
+	max-width: 754px !important;
+}
+@media screen and(max-width:420px) {
+	.custom-btn {
+		width: 70px;
+		height: 70px;
+		padding: 26px 18px;
+	}
+	.pricing-options .col-md-4 > product {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: content-box !important;
+	}
+}
+.navbar-nav li a {
+	line-height: 40px;
+	height: 40px;
+}
+col-xs-1 > div {
+	width: 100%;
+	height: 20px;
+	background-color: $black;
+}
+.product > {
+	.header {
+		background-image: none;
+		background-color: $color_mine_shaft_approx;
+		width: auto;
+		border-bottom: 2px solid $white;
+		margin: 0;
+		float: left;
+		width: 100%;
+		> h3 {
+			color: $white;
+			text-align: center;
+		}
+	}
+	.content {
+		background-image: none;
+		background-color: $color_mine_shaft_approx;
+		margin: 0;
+		float: left;
+		width: 100%;
+		height: 150px;
+		> h3 {
+			color: $white;
+			text-align: center;
+		}
+		> p {
+			font-style: italic;
+			text-align: center;
+		}
+	}
+	.footer {
+		background-image: none;
+		background-color: $color_pizazz_approx;
+		border: solid 3px $color_pizazz_approx;
+		margin: 0;
+		float: left;
+		width: 100%;
+		> h4 {
+			color: $white;
+			text-align: center;
+		}
+	}
+	.description {
+		background: $white;
+		float: left;
+		width: 100%;
+		> p {
+			text-align: center;
+			line-height: 45px;
+		}
+	}
+}
+body > footer {
+	margin: 0;
+	padding: 0;
+}
+.hr-left > hr {
+	margin-right: 100%;
+}
+.slide h4 {
+	font-weight: 900;
+	font-size: 22px;
+}
+.header-btn > a {
+	&:hover {
+		text-decoration: none;
+	}
+	&:focus {
+		text-decoration: none;
+	}
+}
+li.active {
+	background-color: $color_pizazz_approx;
+}
